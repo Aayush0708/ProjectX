@@ -1,0 +1,14 @@
+{
+  "name": "@projectx/shared",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./db": "./src/db/index.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio",
+    "typecheck": "tsc --noEmit"
+  }
+}

@@ -21,6 +21,8 @@ importers:
         specifier: ^7.0.2
         version: 7.0.2
 
+  packages/shared: {}
+
 packages:
 
   '@turbo/darwin-64@2.11.8':
