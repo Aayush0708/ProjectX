@@ -9,7 +9,10 @@
     "test": "turbo run test",
     "format": "prettier --write .",
     "infra:up": "docker compose -f infra/docker-compose.yml up -d",
-    "infra:down": "docker compose -f infra/docker-compose.yml down"
+    "infra:down": "docker compose -f infra/docker-compose.yml down",
+    "db:generate": "pnpm --filter @projectx/shared db:generate",
+    "db:migrate": "pnpm --filter @projectx/shared db:migrate",
+    "db:studio": "pnpm --filter @projectx/shared db:studio"
   },
   "devDependencies": {
     "@types/node": "^26.6.5",
